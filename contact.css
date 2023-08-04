@@ -1,0 +1,316 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-image: url(images/fond_image_accuiel.jpg);
+    background-size: cover;
+}
+header{
+  width: 100%;
+}
+h1{
+    color: white;
+    font-weight: 800;
+    font-style: italic;
+    font-size: 50px;
+    margin-left: 45px;
+    margin-top: 15px;
+}
+span{
+    color: #ff0000;
+}
+nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin: 0px 25px;
+    
+}
+nav ul li a{
+color: white;
+font-size: 25px;
+text-decoration: none;
+text-transform: uppercase;
+font-weight: bolder;
+}
+nav ul li a:hover{
+    color: red;
+    border-bottom: 5px white solid;
+    
+}
+.container{
+   
+    width: 1261px;
+    height: 687px;
+    margin:0 auto;
+    margin-bottom: 15px;
+    display:flex;
+    
+}
+.container .cote_left{
+    width: 561px;
+    background-color: #2D2D2D;
+    border-radius: 50px 0px 0px 50px;
+    padding-left: 20px;
+   
+}
+.cote_left h1{
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 0px;
+    text-align: center;
+    padding: 0px;
+}
+.cote_left h3{
+    color: white;
+    font-size: 25px;
+    text-align: center;
+}
+.container .cote_right{
+    width:700px;
+    background-color: #C1BCBC;
+    border-radius:0px 50px 50px 0px ;
+    float: right;
+}
+.icons li{
+    list-style-type: none;
+    color: black;
+    margin-left: 0px;  
+    margin: 40px;
+}
+.icons li i{
+    background-color: #ff0000;
+    margin-left: 0px;
+    border-radius: 50%;
+    font-size: 30px;
+    width: 35px;
+    height: 35px;
+    
+}
+.icons li a{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bolder;
+}
+.icons li span{
+    color: white;
+    font-size: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+}
+.icons-socials{
+    display:flex;
+}
+.icons-socials li{
+    list-style-type: none;
+    
+}
+.icons-socials li i{
+    margin: 30px;
+    font-size: 30px;
+    background-color: #ff0000;
+    width: 45px;
+    height: 45px;
+   text-align: center;
+   color: black;
+   border-radius: 10px;
+    
+}
+.icons-socials li i:hover{
+    background-color: white;
+    color: blue;
+}
+
+.titre{
+    text-align: left;
+    margin-left: 23px;
+    font-size:28px ;
+    letter-spacing: 0.5px;
+    text-align: center;
+    font-weight: bolder;
+}
+.formualire{
+    display: table;
+    width: 100%;
+    padding: 15px 5px  5px 5px;
+}
+.formulaire input, textarea{
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 18px;
+    color: black;
+    padding: 20px 10px 20px 5px;
+    width: 100%;
+}
+.formulaire textarea{
+    height: 90px;
+    resize: none;
+}
+.formulaire-groupe{
+    width:46% ;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #ecf0f3,inset -8px -8px 8px #ffff;
+}
+#formulaire-groupe{
+    width:46% ;
+    float: left;
+    padding: 0px 30px;
+    margin: 14px 12px;
+    border-radius: 25px;
+    box-shadow: inset 8px 8px 8px #ecf0f3,inset -8px -8px 8px #ffff;
+}
+.formulaire .formulaire-groupe:last-child{
+    width: 96%;
+}
+.submit-button{
+    width: 50%;
+    height: 40px;
+   margin-left:25%;
+    border-radius: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    text-align:  center;
+    background:#ff0000;
+    border: none;
+
+}
+.submit-button:hover{
+    color: black;
+}
+ 
+nav .menu-nav{
+    position: absolute;
+    width: 35px;
+    right: 30px;
+    top: 35px;
+    color: white;
+}
+nav .menu-nav{
+    display: none;
+    color: white;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    width: 35px;
+}
+.mobile-menu{
+    margin-left: 0px;
+    }
+   
+/*responsive*/
+@media screen and (max-width:900px){
+    .table{
+        top: 0;
+        left: 0;
+        position: absolute;
+        background-color: black;
+        width: 100%;
+        height: 1000px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-left: -100%;
+        transition: all 0.5s ease;
+    }
+    .table.mobile-menu{
+        margin-left: 0px;
+    }
+    nav .menu-nav{
+        display: block;
+    }
+    .table ul {
+        display: flex;
+        flex-direction: column;
+        align-items: cener;
+    }
+    .table ul li{
+        margin: 50px 0px;
+        font-size: 30px;
+        list-style-type: none;
+    }
+    .container{
+        display:flex;
+        flex-direction: column;
+        margin: 15%;
+        width: 100%;
+        
+    }
+    .container .cote_left{
+        border-radius: 50px 50px 0px 0px;
+       
+    }
+    .container .cote_right{
+        border-radius:0px 0px 50px 50px ;
+        width: 580px;
+    }
+    .submit-button{
+        margin-bottom: 30px;
+    }
+    }
+    /*responsive*/
+@media screen and (max-width:500px){
+    header{
+        margin: 0px;
+        
+    }
+    .container{
+        padding-top: 600px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+       justify-content: center;
+       
+       
+    }
+   .container .cote_left h1{
+    font-size: 40px;
+   }
+   .container .cote_left h3{
+    font-size: 20px;
+   }
+    
+    .container .cote_left{
+        width: 310px;
+        border-radius: 0px 0px 0px 0px;
+        
+    }
+    .container .cote_left .icons{
+        margin: 0px;
+        padding-left:0px;
+    }
+    .container .cote_left ul li{
+        margin-left:0px
+        font-size: 10px;
+    }
+    .container .cote_left ul li span{
+        font-size: 15px;
+    }
+    
+    .container .cote_left .icons-socials{
+        margin: 0px;
+        padding: 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        flex-direction: column;
+    }
+    
+    .container .cote_right{
+        border-radius:0px 0px 50px 50px ;
+        width: 330px;
+    }
+}

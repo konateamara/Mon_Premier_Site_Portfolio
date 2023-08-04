@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/Amara_design-removebg-preview.png" type="image/x-icon">
+    <title>services</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>port<span>folio</span></h1>
+            <div class="table">
+            <ul>
+                <li><a href="index.html">Accuiel</a></li>
+                <li><a href="a_propos.html">A propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projets.html">projets</a></li>
+                <li><a href="contact.html">contactez-moi</a></li>
+            </ul>
+        </div>
+        <img src="images/index.jpg" alt="menu" class="menu-nav">
+        </nav>
+    </header>
+    <div class="container">
+        <h1>Mes <span>services</span></h1>
+        <h3>"Des créations numériques sur mesure pour votre succès en ligne."</h3>
+        <div class="services">
+        <div class="grid1">
+            <div class="cercle">
+                <p><i class="fa-brands fa-figma"></i></p>
+                </div>
+            <h3>web design</h3>
+            <p>"Le web design, c'est l'art de donner vie à des idées créatives en concevant des interfaces web esthétiques et intuitives."</p>
+        </div>
+        <div class="grid2">
+            <div class="cercle" data-tilt>
+                    <p><i class="fa-solid fa-code"></i></p>
+            </div>
+            <h3 data-tilt>developpement web/mobile</h3>
+            <p>"Le développement web et mobile allie la puissance de la technologie à la créativité pour construire des expériences interactives accessibles sur tous les appareils."</p>
+        </div>
+        <div class="grid3">
+            <div class="cercle">
+                    <p><i class="fa-solid fa-pen-to-square"></i></p>
+            </div>
+            <h3>developpement logiciel</h3>
+            <p>"Le développement logiciel ouvre les portes de l'innovation en créant des applications puissantes et sur mesure pour répondre aux besoins du monde moderne."</p>
+        </div>
+        <div class="grid4">
+            <div class="cercle">
+                <p><i class="fa-solid fa-chart-line"></i></p>
+            
+        </div>
+            <h3>graphisme</h3>
+            <p>"Le graphisme, c'est l'art captivant de communiquer des idées, des émotions et des messages à travers des designs visuellement époustouflants."</p>
+        </div>
+        <div class="grid5">
+            <div class="cercle">
+                    <p><i class="fa-solid fa-globe"></i></p>
+            </div>
+            <h3>SEO</h3>
+            <p>"Le SEO, c'est l'art de propulser votre présence en ligne vers de nouveaux sommets, en optimisant votre visibilité et votre classement sur les moteurs de recherche."</p>
+        </div>
+        <div class="grid6">
+            <div class="cercle" data-tilt>
+                    <p><i class="fa-solid fa-cart-shopping"></i></i></p>
+            </div>
+            <h3 data-tilt>marketing digital</h3>
+            <p>"Le marketing digital, une puissante passerelle vers le succès en ligne, où la créativité rencontre la stratégie pour atteindre et engager le public cible."</p>
+        </div>
+    </div>
+    </div>
+    <script>
+        const menuHamburger = document.querySelector(".menu-nav")
+        const navLinks = document.querySelector(".table")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+   </script>
+   
+</body>
+</html>

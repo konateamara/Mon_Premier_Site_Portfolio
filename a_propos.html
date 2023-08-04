@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="a_propos.css">
+    <link rel="shortcut icon" href="images/Amara_design-removebg-preview.png" type="image/x-icon">
+    <title>a_propos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>port<span>folio</span></h1>
+            <div class="table">
+            <ul>
+                <li><a href="index.html">Accuiel</a></li>
+                <li><a href="a_propos.html">A propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projets.html">projets</a></li>
+                <li><a href="contact.html">contactez-moi</a></li>
+            </ul>
+        </div>
+        <img src="images/index.jpg" alt="menu" class="menu-nav">
+        </nav>
+    </header>
+    <div class="container">
+        <div class="propos">
+            <h1>A propos de moi</h1>
+           
+            <p>
+                Je suis étudiant à l'École Supérieure de Commerce et Technologie (ESCT), en option Licence 2 d'Informatique de Gestion, passionné par le développement Full Stack. <br> Mon objectif est de maîtriser les technologies front-end et back-end pour créer des solutions numériques innovantes et performantes.
+            </p>
+            
+        </div>
+        <div class="images">
+            <p><img src="images/image2_amara-removebg-preview.png" alt=""></p>
+        </div>
+    </div>
+    <script>
+        const menuHamburger = document.querySelector(".menu-nav")
+        const navLinks = document.querySelector(".table")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+   </script>
+</body>
+</html>

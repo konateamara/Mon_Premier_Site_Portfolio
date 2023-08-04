@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" href="images/Amara_design-removebg-preview.png" type="image/x-icon">
+    <title>contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>port<span>folio</span></h1>
+            <div class="table">
+            <ul>
+                <li><a href="index.html">Accuiel</a></li>
+                <li><a href="a_propos.html">A propos</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="projets.html">projets</a></li>
+                <li><a href="contact.html">contactez-moi</a></li>
+            </ul>
+        </div>
+        <img src="images/index.jpg" alt="menu" class="menu-nav">
+        </nav>
+    </header>
+    <div class="container">
+        <div class="cote_left">
+            <h1>les informations <br> sur moi</h1>
+            <h3>En cas de besoin veuillez me <br> contactez</h3>
+            <ul class="icons">
+                <li><i class="fa fa-phone" aria-hidden="true"></i>
+                    <span>Téléphone:</span><a href="https://wa.me/+22350944719">&nbsp;&nbsp;+22350944719</a>
+                </li>
+                    
+                    <li><i class="fa fa-paper-plane" aria-hidden="true"></i>
+                        <span>Email:</span><a href="https://mail.google.com/mail/u/0/?tab=km#inbox">&nbsp;&nbsp;konateamara753@gmail.com</a>
+                    </li>
+
+                    <li><i class="fa fa-globe" aria-hidden="true"></i>
+                        <span>Mon sie web:</span><a href="https://MON_site_web">&nbsp;&nbsp;Mon site web.com</a>
+                    </li>
+                    <li><i class="fa fa-home" aria-hidden="true"></i>
+                        <span>BAMAKO, MALI</span>
+                    </li>
+                    
+            </ul>
+            <ul class="icons-socials">
+                
+
+                <li>
+                    <a href="https://wa.me/+22350944719">
+                        <i class="fa fa-whatsapp"></i>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="https://github.com/konateamara">
+                        <i class="fa fa-github"></i>
+                    </a>
+                </li>
+                 <li>
+                    <a href="https://www.linkedin.com/in/amara-konate-0b5180264/">
+                        <i class="fa fa-linkedin"></i>
+                    </a>
+                </li>
+            </ul>
+
+
+        </div>
+        <div class="cote_right">
+            <form action="#" method="post">
+                <h2 class="titre">Envoyez-Nous un message</h2>
+                <div class="formulaire">
+                    <div class="formulaire-groupe">
+                        <input type="text" class="nom" placeholder="Nom">
+                    </div>
+                    <div class="formulaire-groupe">
+                        <input type="text" class="Prenom" placeholder="Prenom">
+                    </div>
+                    <div class="formulaire-groupe">
+                        <input type="email" class="Email" placeholder="Email">
+                    </div>
+                    <div class="formulaire-groupe">
+                        <input type="number" class="telephone" placeholder="telephone">
+                    </div>
+                    <div id="formulaire-groupe">
+                        <textarea name="message" id="#"  placeholder="Ecrit un message ici"></textarea>
+                    </div>
+                </div>
+                <input type="submit" value="Envoyez-Nous" class="submit-button">
+            </form>
+
+        </div>
+
+    </div>
+    <script>
+        const menuHamburger = document.querySelector(".menu-nav")
+        const navLinks = document.querySelector(".table")
+ 
+        menuHamburger.addEventListener('click',()=>{
+        navLinks.classList.toggle('mobile-menu')
+        })
+</script>
+</body>
+</html>
